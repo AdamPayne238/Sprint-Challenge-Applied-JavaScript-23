@@ -1,4 +1,4 @@
-// STEP 1: Create a header component.
+// STEPp 1: Create a header component.
 // -----------------------
 // Using a function create the component you see below:
 //
