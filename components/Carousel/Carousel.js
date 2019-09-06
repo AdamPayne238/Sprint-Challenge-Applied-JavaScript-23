@@ -17,3 +17,47 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+function carouselComponent(imgSrc){
+
+      //Define Elements (createElement)
+      let carousel = document.createElement('div');         // <div class="carousel">
+      let leftButton = document.createElement('div');       //   <div class="left-button"> < </div>
+      let mountainsImg = document.createElement('img');     //   <img src="./assets/carousel/mountains.jpeg" />
+      let computerImg = document.createElement('img');      //   <img src="./assets/carousel/computer.jpeg" />
+      let treesImg = document.createElement('img');         //   <img src="./assets/carousel/trees.jpeg" />
+      let turntableImg = document.createElement('img');     //   <img src="./assets/carousel/turntable.jpeg" />
+      let rightButton = document.createElement('div');      //   <div class="right-button"> > </div>
+  
+      //Set Structure (appendChild)
+      carousel.appendChild(leftButton);
+      carousel.appendChild(mountainsImg);
+      carousel.appendChild(computerImg);
+      carousel.appendChild(treesImg);
+      carousel.appendChild(turntableImg);
+      carousel.appendChild(rightButton);
+  
+      //Set Class (classList.add)
+      carousel.classList.add('carousel');
+      leftButton.classList.add('left-button');
+      rightButton.classList.add('right-button');
+  
+      //Set Content (textContent)
+      leftButton.textContent = 	'\u00AB';
+      mountainsImg.src = "./assets/carousel/mountains.jpeg";
+      computerImg.src = "./assets/carousel/computer.jpeg";
+      treesImg.src = "./assets/carousel/trees.jpeg";
+      turntableImg.src = "./assets/carousel/turntable.jpeg";
+      rightButton.textContent = '	\u00BB';
+  
+      //Return carousel
+      return carousel
+}
+
+const carouselContainer = document.querySelector('.carousel-container');
+
+
+
+// data.forEach(data => {
+//   carouselContainer.appendChild(carouselComponent(imgSrc))
+// });
