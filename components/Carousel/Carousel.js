@@ -18,7 +18,7 @@
   </div>
 */
 
-function carouselComponent(imgSrc){
+function carouselComponent(){
 
       //Define Elements (createElement)
       let carousel = document.createElement('div');         // <div class="carousel">
@@ -52,12 +52,18 @@ function carouselComponent(imgSrc){
   
       //Return carousel
       return carousel
+    
 }
+
+const imageArray = ["./assets/carousel/mountains.jpeg", "./assets/carousel/computer.jpeg", "./assets/carousel/trees.jpeg", "./assets/carousel/turntable.jpeg"]
 
 const carouselContainer = document.querySelector('.carousel-container');
 
+carouselContainer.appendChild(carouselComponent);
+
+// imageArray.forEach(data => {
+//   carouselContainer.appendChild(imageArray);
+// })
 
 
-// data.forEach(data => {
-//   carouselContainer.appendChild(carouselComponent(imgSrc))
-// });
+// carouselContainer.appendChild(carouselComponent);
